@@ -46,6 +46,8 @@
  .game-bar{height:34px}.dialogue{height:100%;max-height:none;padding:20px;flex-basis:auto}.dialogue h1{font-size:23px}.dialogue p{font-size:12px;line-height:1.65}.choice{min-height:46px;padding:10px 12px}.choice strong{font-size:11px}.speaker-row{margin-bottom:11px}.pause-card h1{font-size:31px}.scene-label{font-size:6px}.speech{font-size:20px;max-width:190px}
 }
 @media(prefers-reduced-motion:reduce){.choice,.primary{transition:none}.pause-screen{backdrop-filter:none}}
+
+.creator-credit{position:absolute;right:14px;bottom:12px;z-index:2;margin:0;padding:6px 10px;border-radius:5px;background:#f3f0dfe8;color:#263d32;font:11px/1.4 var(--body);letter-spacing:.1px;pointer-events:none}
 </style>
 </head>
 <body>
@@ -53,6 +55,7 @@
   <header class="game-bar"><span id="locationText">01 / AN AFTERNOON AT THE POND</span><nav aria-label="Game controls"><button id="soundButton" aria-label="Turn sound on" aria-pressed="false">♫ <span>OFF</span></button><button id="helpButton" aria-label="How to play">?</button><button id="pauseButton" aria-label="Pause game">Ⅱ</button></nav></header>
   <section class="world" aria-label="The pond encounter">
     <canvas id="gameCanvas" width="1000" height="480" aria-label="An angler beside a pond, with a heron fishing and deer on the far bank."></canvas>
+    <p class="creator-credit">made by illiya urakpayev</p>
     <div class="scene-label" id="sceneLabel">A QUIET POND. NO ONE AROUND.</div>
     <div class="speech" id="speech" hidden></div>
     <div class="bite-prompt" id="bitePrompt" hidden>IT'S BITING!<span>SPACE OR REEL IN</span></div>
